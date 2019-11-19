@@ -41,7 +41,7 @@
                         <div v-for="detail in daily_details" :key="detail.detail_id">
                             <div class="col">
                                 <ul>
-                                    <li>Day: </li>
+                                    <li>Day:{{detail.day}}</li>
                                     <li>Qty:</li>
                                     <li>Price:</li>
                                     <li>Avail:</li>

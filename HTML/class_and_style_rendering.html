@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+        .colorbox {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <span><a href="index.html">
+                        < Go back</a> </span> <h3 class="text-info">Class and Style Binding</h3>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Product DIV starts here -->
+        <div id="product">
+            <div class="row">
+                <div class="col">
+                    <p>In this session we will look into how to bind class and styles to the DOM elements.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <p>Output:</p>
+                </div>
+                <div class="col">
+                    <p>Cart Total: {{cart_total}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img :src="image" :alt="alt_text" :title="toolTip">
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h5>{{product_name}}</h5>
+                            <p><small class="text-primary">We Import Fresh stock daily from Australia</small></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="border-bottom: solid 1px #746a6a">Description:</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div v-for="detail in details" :key="detail.detail_id">
+                            <div class="col">
+                                <ul>
+                                    <li>Size: {{detail.size}} </li>
+                                    <li>Price: {{detail.price}} </li>
+                                    <li>Weight: {{detail.weight}} </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="ml-3 mr-3">Colors:</p>
+                        <div v-for="detail in details" :key="detail.detail_id" class="colorbox"
+                            :style="{backgroundColor: detail.color}" @mouseover="changeImage(detail.image)">
+                        </div>
+                        <small class="p-1 ml-3 text-primary">Mouse over to these colors to change product image</small>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <button class="btn-success" @click="addToCart">AddToCart</button><small class="ml-3">Click
+                                on AddToCart, Cart Total value will change on top.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h5 class="text-info">Example 1: Style Binding</h5>
+                    <p :style="{color:pcolor}">This paragraph color applied through style Binding</p>
+                    <p :style="{fontSize : fontsize}">This paragraph font size is applied through style binding </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h5 class="text-info">Example 2 : Style Binding Objects</h5>
+                    <div class="row">
+                        <div class="col">
+                            <p :style="style_object">This paragraph style is applied thorugh style binding the object.
+                                Please see the right block for this object style binding code</p>
+                        </div>
+                        <div class="col" style="border-left: 1px dotted #333;">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-success">HTML:</p>
+                                    <code>
+                                                &lt;div class=&quot;product&quot;&gt;<br />
+                                                &lt;p :style=&quot;style_object&quot;&gt;This paragraph style is applied thorugh style binding the object. Please see the right block for this object style binding code&lt;/p&gt;<br />
+                                                &lt;/div&gt;<br />
+                                        </code>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-success">Script JS:</p>
+                                    <code>
+                                                &lt;script&gt;<br />
+                                                var app = new Vue({<br />
+                                                    el: '#product',<br />
+                                                    data: {<br />
+                                                        style_object: {<br />
+                                                            color: 'blue',<br />
+                                                            fontsize: '20px',<br />
+                                                        },<br />
+                                                    },<br />
+                                                })<br />
+                                            &lt;/script&gt;
+                                        </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h5 class="text-info">Exampe 3: Bidning the Arrays which contains multiple objects</h5>
+                    <div class="row">
+                        <div class="col">
+                            <p :style="style_array">This paragraph styles are applied from an Array which containes
+                                multiple objects. The code for this block is on right side</p>
+                        </div>
+                        <div class="col" style="border-left: dotted 1px #333">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-success">HTML:</p>
+                                    <code>
+                                        &lt;div id=&quot;product&quot;&gt;<br />
+                                        &lt;p :style=&quot;style_array&quot;&gt;This paragraph styles are applied from an Array which containes multiple objects. The code for this block is on right side&lt;/p&gt;<br />
+                                        &lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-success">Script JS:</p>
+                                    <code>
+                                        &lt;script&gt;<br />
+                                        var app = new Vue({<br />
+                                        el: '#product',<br />
+                                        data: {<br />
+                                        style_array: [<br />
+                                        {<br />
+                                        color: 'purple',<br />
+                                        fontSize: '15px',<br />
+                                        },<br />
+                                        {<br />
+                                        margin: '5px',<br />
+                                        padding: '10px',<br />
+                                        },<br />
+                                        ],<br />
+                                        },<br />
+                                        })<br />
+                                        &lt;/script&gt;
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Product DIV ends here-->
+
+        <hr>
+        <div class="row">
+            <div class="col">
+                <span><a href="index.html"> Back to Home</a> </span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="vue.min.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#product',
+            data: {
+                image: 'apple.png',
+                alt_text: 'This is alt text',
+                toolTip: 'This is title',
+                product_name: 'Apple Australia Red Fresh',
+                inStock: true,
+                pcolor: 'red',
+                fontsize: '12px',
+                details: [
+                    {
+                        detail_id: 1,
+                        size: 'Medium',
+                        price: '$2.5',
+                        weight: '50 Grams',
+                        color: 'green',
+                        image: 'green_apple.jpg',
+                    },
+                    {
+                        detail_id: 2,
+                        size: 'Large',
+                        price: '$2.7',
+                        weight: '50 Grams',
+                        color: 'red',
+                        image: 'red_apple.jpg',
+                    },
+                ],
+                cart_total: 0,
+                style_object: {
+                    color: 'blue',
+                    fontSize: '20px',
+                },
+                style_array: [
+                    {
+                        color: 'purple',
+                        fontSize: '15px',
+                    },
+                    {
+                        margin: '5px',
+                        padding: '10px',
+                    },
+                ],
+            },
+            methods: {
+                addToCart() {
+                    this.cart_total += 1
+                },
+                changeImage(image) {
+                    this.image = image
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

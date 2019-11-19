@@ -1,4 +1,3 @@
-{% raw %}
 <div id="product">
     <div class="row">
         <div class="col">
@@ -34,9 +33,9 @@
                 <div v-for="detail in details" :key="detail.detail_id">
                     <div class="col">
                         <ul>
-                            <li>Size:{{detail.size}}</li>
-                            <li>Price:{{detail.price}}</li>
-                            <li>Weight:{{detail.weight}}</li>
+                            <li>Size: {{detail.size}}</li>
+                            <li>Price: {{detail.price}}</li>
+                            <li>Weight: {{detail.weight}}</li>
                         </ul>
                     </div>
                 </div>
@@ -44,49 +43,19 @@
             <div class="row">
                 <p class="ml-3 mr-3">Colors:</p>
                 <div v-for="detail in details" :key="detail.detail_id" class="colorbox"
-                    :style="{backgroundColor:detail.color}" @mouseover="changeImage(detail.image)">
+                    :style="{backgroundColor: detail.color}" @mouseover="changeImage(detail.image)">
                 </div>
                 <small class="p-1 ml-3 text-primary">Mouse over to these colors to change product image</small>
             </div>
             <div class="row mt-2">
                 <div class="col">
-                    <button class="btn-success" @click="addToCart">AddToCart</button><small class="ml-3">Click
+                    <button :class="{'btn-success':inStock}" :class="{'btn-secondary': !inStock}" @click="addToCart"
+                        :disabled="!inStock">AddToCart</button><small class="ml-3">Click
                         on AddToCart, Cart Total value will change on top.</small>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col">
-            <h5 class="text-info">Example 1: Style Binding</h5>
-            <p :style="{color:pcolor}">This paragraph color applied through style Binding</p>
-            <p :style="{fontSize:fontsize}">This paragraph font size is applied through style binding </p>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col">
-            <h5 class="text-info">Example 2 : Style Binding Objects</h5>
-            <div class="row">
-                <div class="col">
-                    <p :style="style_object">This paragraph style is applied thorugh style binding the object.
-                        Please see the right block for this object style binding code</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col">
-            <h5 class="text-info">Exampe 3: Bidning the Arrays which contains multiple objects</h5>
-            <div class="row">
-                <div class="col">
-                    <p :style="style_array">This paragraph styles are applied from an Array which containes
-                        multiple objects. The code for this block is on right side</p>
+                    <p><small>Id inStock is false button style changes from green to gray and it will be disable</small>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-{% endraw %}

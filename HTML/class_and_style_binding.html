@@ -34,9 +34,9 @@
                 <div v-for="detail in details" :key="detail.detail_id">
                     <div class="col">
                         <ul>
-                            <li>Size: {{detail.size}} </li>
-                            <li>Price: {{detail.price}} </li>
-                            <li>Weight: {{detail.weight}} </li>
+                            <li>Size:{{detail.size}}</li>
+                            <li>Price:{{detail.price}}</li>
+                            <li>Weight:{{detail.weight}}</li>
                         </ul>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
             <div class="row">
                 <p class="ml-3 mr-3">Colors:</p>
                 <div v-for="detail in details" :key="detail.detail_id" class="colorbox"
-                    :style="{backgroundColor: detail.color}" @mouseover="changeImage(detail.image)">
+                    :style="{backgroundColor:detail.color}" @mouseover="changeImage(detail.image)">
                 </div>
                 <small class="p-1 ml-3 text-primary">Mouse over to these colors to change product image</small>
             </div>
@@ -61,7 +61,7 @@
         <div class="col">
             <h5 class="text-info">Example 1: Style Binding</h5>
             <p :style="{color:pcolor}">This paragraph color applied through style Binding</p>
-            <p :style="{fontSize : fontsize}">This paragraph font size is applied through style binding </p>
+            <p :style="{fontSize:fontsize}">This paragraph font size is applied through style binding </p>
         </div>
     </div>
     <hr>

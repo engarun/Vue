@@ -1,0 +1,85 @@
+<div id="product2">
+            <div class="row">
+                <div class="col">
+                    <span><a href="index.html">
+                            < Go back</a> </span> <h3 class="text-info">Event Handler</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <p>We will use DOM events to trigger the scripting methods. In first Section we will see the outpout
+                        and
+                        then we will see HTML and JS code related to this output in sections 2 and 3 respectively.</p>
+                    <p>Click on addToCart button, it will change the cart value.</p>
+                    <p>Instead of using v-on:click="addToCart" , you can simply use @:click="addToCart". " @ is a
+                        shorthand for v-on: " </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <p>Output</p>
+                </div>
+                <div class="col">
+                    <p class="text-primary">Cart Total: </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <img :src="image" :alt="alt_text" :title="toolTip" style="border: solid 1px #bdb8b8">
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h5></h5>
+                            <p style="border-bottom: solid 1px #857f7f">Description:</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div v-for="detail in daily_details" :key="detail.detail_id">
+                            <div class="col">
+                                <ul>
+                                    <li>Day: </li>
+                                    <li>Qty:</li>
+                                    <li>Price:</li>
+                                    <li>Avail:</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Colors:</p>
+                        <div v-for="detail in daily_details" :key="detail.detail_id">
+                            <p @mouseover="ChangeImage(detail.image)" class="ml-3"></p>
+                        </div>
+                        <span class="ml-3">( Mouse over these color names, image will change )</span>
+
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button v-on:click="addToCart" class="btn-success">Add to Cart</button><span
+                                class="ml-3">Click on this button, cart value will change.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <p>HTML code:</p>
+                    <code>
+
+                </code>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <span><a href="index.html"> Back to Home</a> </span>
+
+                </div>
+            </div>
+        </div>

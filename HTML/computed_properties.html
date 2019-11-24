@@ -1,0 +1,60 @@
+<div id="product">
+    <div class="row">
+        <div class="col">
+            <p>Output :</p>
+        </div>
+        <div class="col">
+            <p>Cart Total:</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <img :src="image" alt="apple" title="apple">
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <p class="text-primary">Store : {{storeInfo}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>{{productName}}</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p v-if="inStock" class="text-success font-weight-bold">inStock
+                        <span class="text-primary">Current Stock: {{inStock}}</span>
+                    </p>
+                    <p v-else class="text-danger font-weight-bold">Out Of Stock</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p style="border-bottom: dotted 1px #333;">Description:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Price: <span class="text-danger h5">{{price}}</span></p>
+                </div>
+
+            </div>
+            <div class="row">
+                <p class=" ml-3 mr-3">Colors:</p>
+
+                <div v-for="(item, index) in products" :key="item.id" :style="{backgroundColor:item.color}"
+                    class="colorbox" @mouseover="changeDetails(index)"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Move mouse cursor on these color boxes, automaticlaly product details of image, name, price,
+                        stock will change respectively.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

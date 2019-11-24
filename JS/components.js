@@ -76,7 +76,8 @@
                             </div>
                             <div class="row">
                                     <p class="ml-3  mr-3">Colors:</p>
-                                    <div v-for="(item, index) in products" :key="item.id" :style="{backgroundColor:item.color}" class="colorbox"
+                                    <div v-for="(item, index) in products" :key="item.id" :style="{backgroundColor:item.color}" 
+                                    class="colorbox"
                                     @mouseover="changeDetails(index)"></div>
                             </div>
                             <div class="row">
@@ -88,7 +89,9 @@
                             <hr>
                             <div class="row">
                                 <div class="col">
-                                    <p class="small text-primary">Move over the color boxes, the details of the product will change respectively. If stock is 0 then the addToCart button will be disabled and change the color of the button to gray and label as OutOfStcok</p>
+                                    <p class="small text-primary">Move over the color boxes, the details of the product will 
+                                    change respectively. If stock is 0 then the addToCart button will be disabled and change the
+                                    color of the button to gray and label as OutOfStcok</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -107,7 +110,8 @@
                 location: 'Green Park',
                 selectedProduct: 0,
                 cart_total: 0,
-                conditions: ['All the prices including VAT', 'Shipping charges are aditional and varies from place to place', 'Not Delivered during to public holidays', 'items not allowed for return after 24 hours of delivery'],
+                conditions: ['All the prices including VAT', 'Shipping charges are aditional and varies from place to place', 
+                             'Not Delivered during to public holidays', 'items not allowed for return after 24 hours of delivery'],
                 products: [
                     {
                         id: 1,

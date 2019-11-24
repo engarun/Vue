@@ -1,0 +1,16 @@
+<div id="product">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <p class="text-success">Output:</p>
+                </div>
+                <div class="col">
+                    <p>CartTotal: {{cart.length}}</p>
+                </div>
+            </div>
+            <hr>
+            <product :promo="promo" @add-to-cart="UpdateCart" @remove-from-cart="RemoveFromCart"></product>
+        </div>
+    </div>
+</div>

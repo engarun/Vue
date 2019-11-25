@@ -1,0 +1,26 @@
+<div id="feedback">
+    <div class="row">
+        <p class="text-success">Output</p>
+    </div>
+    <div class="row">
+        <div class="col">
+            <feedback @feedback-submitted="AddFeedback"></feedback>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <h5>Feedbacks:</h5><span class="small text-primary">The submitted values of above form will display
+                below</span>
+            <p v-if="!feedback.length">There are no posts yet.</p>
+            <ul>
+                <li v-for="post in feedback">
+                    <p class="text-primary">Name: {{post.name}}</p>
+                    <p class="small">Message: {{post.message}}</p>
+                    <p>Rating: {{post.rating}}</p>
+                    <p>Like the post: {{post.like}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -18,7 +18,8 @@
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label col-form-label-sm" for="message">Message:</label>
                             <div class="col-sm-4">
-                                <textarea class="form-control form-control-sm" v-model="message" name="message" id="message" cols="30" rows="10"></textarea>
+                                <textarea class="form-control form-control-sm" v-model="message" name="message" id="message"
+                                 cols="30" rows="10"></textarea>
                             </div>
                         </div>
                         <div class="form-group row">

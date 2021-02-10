@@ -9,7 +9,7 @@
     "content": "Store tomatoes stem side down in a single layer, at room temperature, away from the sunlight. Ripe tomatoes should be refrigerated if they need to be stored for a long time.Tomatoes are used in salads, soups, curries, pickles, etc. Tomatoes that are cooked with a touch of oil gives more lycopene than raw ones.contain lycopene, an antioxidant that reduces the risk of cancer and heart-diseases. They protect the eyes from light induced damage.Essential for pregnant women as these tomatoes protect infants against neural tube defects.",
     "typeVariant": "D",
     "colorVariant": "5",
-    "imageUrl": "http://placeimg.com/641/481/tech"
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/tomato.jpg"
   },
   {
     "id": 202,
@@ -22,7 +22,7 @@
     "review": 67,
     "typeVariant": "A",
     "colorVariant": "4",
-    "imageUrl": "http://placeimg.com/642/482/tech"
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/apple.jpg"
   },
   {
     "id": 203,
@@ -35,7 +35,7 @@
     "review": 116,
     "typeVariant": "E",
     "colorVariant": "2",
-    "imageUrl": "http://placeimg.com/643/483/tech"
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/carrot.jpg"
   },
   {
     "id": 204,
@@ -48,7 +48,7 @@
     "review": 78,
     "typeVariant": "D",
     "colorVariant": "3",
-    "imageUrl": "http://placeimg.com/644/484/tech"
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/cauliflower.jpg"
   },
   {
     "id": 205,
@@ -61,7 +61,7 @@
     "review": 156,
     "typeVariant": "A",
     "colorVariant": "2",
-    "imageUrl": "http://placeimg.com/645/485/tech"
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/onion.jpg"
   },
   {
     "id": 206,
@@ -74,7 +74,7 @@
     "review": 107,
     "typeVariant": "E",
     "colorVariant": "3",
-    "imageUrl": "http://placeimg.com/646/486/tech"
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/mango.jpg"
   },
   {
     "id": 207,
@@ -87,7 +87,7 @@
     "review": 174,
     "typeVariant": "E",
     "colorVariant": "3",
-    "imageUrl": "http://placeimg.com/647/487/tech"
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/banana.jpg"
   },
   {
     "id": 208,
@@ -100,7 +100,7 @@
     "review": 104,
     "typeVariant": "B",
     "colorVariant": "3",
-    "imageUrl": "http://placeimg.com/648/488/tech"
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/lemon.jpg"
   },
   {
     "id": 209,
@@ -113,7 +113,7 @@
     "review": 44,
     "typeVariant": "C",
     "colorVariant": "3",
-    "imageUrl": "http://placeimg.com/639/439/tech"
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/capsicum.jpg"
   },
 
   {
@@ -127,6 +127,6 @@
     "review": 34,
     "typeVariant": "B",
     "colorVariant": "5",
-    "imageUrl": "http://placeimg.com/644/480/tech"
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/grapes.jpg"
   }
 ]

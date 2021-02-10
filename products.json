@@ -12,32 +12,6 @@
     "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/tomato.jpg"
   },
   {
-    "id": 202,
-    "name": "Fresho Apple - Red Delicious, Regular, 4 pcs (Approx. 530g - 640g)",
-    "price": 271,
-    "subCategoryId": 101,
-    "categoryId": 1,
-    "rate": 2.18,
-    "content": "Nam incidunt blanditiis odio inventore. Nobis voluptatum quibusdam laboriosam a numquam. Delectus sequi ipsa possimus ratione repellendus quibusdam. Molestiae fuga laudantium natus dolorem.Store tomatoes stem side down in a single layer, at room temperature, away from the sunlight. Ripe tomatoes should be refrigerated if they need to be stored for a long time.Tomatoes are used in salads, soups, curries, pickles, etc. Tomatoes that are cooked with a touch of oil gives more lycopene than raw ones.contain lycopene, an antioxidant that reduces the risk of cancer and heart-diseases. They protect the eyes from light induced damage.Essential for pregnant women as these tomatoes protect infants against neural tube defects.",
-    "review": 67,
-    "typeVariant": "A",
-    "colorVariant": "4",
-    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/apple.jpg"
-  },
-  {
-    "id": 203,
-    "name": "Fresho Carrot - Ooty, 500 g Delicious, Regular, 4 pcs",
-    "price": 295,
-    "subCategoryId": 101,
-    "categoryId": 1,
-    "rate": 0.91,
-    "content": "Quod reiciendis aspernatur ipsum cum debitis. Quisquam tempore doloremque quo ipsum ipsa tempora. Dignissimos qui ex ad facilis. Quo sequi recusandae eveniet autem ducimus nam.Store tomatoes stem side down in a single layer, at room temperature, away from the sunlight. Ripe tomatoes should be refrigerated if they need to be stored for a long time.Tomatoes are used in salads, soups, curries, pickles, etc. Tomatoes that are cooked with a touch of oil gives more lycopene than raw ones.contain lycopene, an antioxidant that reduces the risk of cancer and heart-diseases. They protect the eyes from light induced damage.Essential for pregnant women as these tomatoes protect infants against neural tube defects.",
-    "review": 116,
-    "typeVariant": "E",
-    "colorVariant": "2",
-    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/carrot.jpg"
-  },
-  {
     "id": 204,
     "name": "Fresho Cauliflower, 1 pc (approx. 400 to 600 g)",
     "price": 280,
@@ -113,7 +87,7 @@
     "review": 44,
     "typeVariant": "C",
     "colorVariant": "3",
-    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/capsicum.jpg"
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/capsicum.png"
   },
 
   {
@@ -128,5 +102,31 @@
     "typeVariant": "B",
     "colorVariant": "5",
     "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/grapes.jpg"
+  },
+  {
+    "id": 202,
+    "name": "Fresho Apple - Red Delicious, Regular, 4 pcs (Approx. 530g - 640g)",
+    "price": 271,
+    "subCategoryId": 101,
+    "categoryId": 1,
+    "rate": 2.18,
+    "content": "Nam incidunt blanditiis odio inventore. Nobis voluptatum quibusdam laboriosam a numquam. Delectus sequi ipsa possimus ratione repellendus quibusdam. Molestiae fuga laudantium natus dolorem.Store tomatoes stem side down in a single layer, at room temperature, away from the sunlight. Ripe tomatoes should be refrigerated if they need to be stored for a long time.Tomatoes are used in salads, soups, curries, pickles, etc. Tomatoes that are cooked with a touch of oil gives more lycopene than raw ones.contain lycopene, an antioxidant that reduces the risk of cancer and heart-diseases. They protect the eyes from light induced damage.Essential for pregnant women as these tomatoes protect infants against neural tube defects.",
+    "review": 67,
+    "typeVariant": "A",
+    "colorVariant": "4",
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/apple.jpg"
+  },
+  {
+    "id": 203,
+    "name": "Fresho Carrot - Ooty, 500 g Delicious, Regular, 4 pcs",
+    "price": 295,
+    "subCategoryId": 101,
+    "categoryId": 1,
+    "rate": 0.91,
+    "content": "Quod reiciendis aspernatur ipsum cum debitis. Quisquam tempore doloremque quo ipsum ipsa tempora. Dignissimos qui ex ad facilis. Quo sequi recusandae eveniet autem ducimus nam.Store tomatoes stem side down in a single layer, at room temperature, away from the sunlight. Ripe tomatoes should be refrigerated if they need to be stored for a long time.Tomatoes are used in salads, soups, curries, pickles, etc. Tomatoes that are cooked with a touch of oil gives more lycopene than raw ones.contain lycopene, an antioxidant that reduces the risk of cancer and heart-diseases. They protect the eyes from light induced damage.Essential for pregnant women as these tomatoes protect infants against neural tube defects.",
+    "review": 116,
+    "typeVariant": "E",
+    "colorVariant": "2",
+    "imageUrl": "https://raw.githubusercontent.com/engarun/Vue/master/carrot.jpg"
   }
 ]
